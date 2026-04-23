@@ -10,7 +10,15 @@
 <body>
 
     <header>
-        <h1><img src="https://gda.com/wp-content/themes/gda/images/la-nacion.png"></h1>
+        <h1 id="Inicio"><img src="https://gda.com/wp-content/themes/gda/images/la-nacion.png"></h1>
+        <ul>
+            <li>
+                <a href="#Inicio">Inicio</a> 
+            </li>
+            <li>
+                <a href="#Contacto">Contacto</a>
+            </li>
+        </ul>
         <nav>
             <a href="https://www.lanacion.com.ar/dolar-hoy/"target="_blank"> Dólar oficial </a> <b> $1385 </b>
             <a href="https://www.lanacion.com.ar/tema/dolar-blue-tid67294/"target="_blank"> Dólar blue </a> <b> $ 1410 </b>
@@ -38,10 +46,45 @@
         </article>
     </main>
 
+    <h1 id="Contacto">Contacto</h1>
+
+    <!-- Fomulario -->
+     <form action="/form" method="get">
+        <!-- el for dentro del label referencia al id del input -->
+        <label for="idnombre">Nombre</label>
+        <input type="text" name="nombre"id="idnombre" required><br><br>
+
+        <label for="idapellido">Apellido</label>
+        <input type="text" name="apellido"id="idapellido" required><br><br>
+        
+        <label for="idemail">Email</label>
+        <input type="email" name="email" id="idemail" required><br><br>
+
+        <label>Selecciona su ciudad:</label>
+        <select name="ciudad">
+            <optgroup label="Ciudades">
+                <option>Mendoza</option>
+                <option selected>Rosario</option>
+                <option>Santa Fe</option>
+                <option>Buenos Aires</option>
+            </optgroup>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <label><input type="radio" name="Genero" value="Femenino">Femenino</label>
+            <label><input type="radio" name="Genero" value="Masculino">Masculino</label>
+        </fieldset><br>
+
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="mensaje"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+     </form>
+
     <footer>
         <p>© Copyright 2026 SA LA NACION | Todos los derechos reservados. Dirección Nacional del Derecho de Autor DNDA - EXPEDIENTE DNDA (renovación) RL-2023-95334553-APN-DNDA#MJ.Queda prohibida la reproducción total o parcial del presente diario.</p>
     </footer>
-
 </body>
-
 </html>
