@@ -5,58 +5,97 @@
     <meta charset="UTF-8">
     <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.VpRPuS_LIZAtuk86IWE4lwHaHY?rs=1&pid=ImgDetMain&o=7&rm=3">
     <title>Últimas noticias de Argentina y el mundo - La Nación</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1 id="Inicio"><img src="https://gda.com/wp-content/themes/gda/images/la-nacion.png"></h1>
-        <ul>
-            <li>
-                <a href="#Inicio">Inicio</a> 
-            </li>
-            <li>
-                <a href="#Contacto">Contacto</a>
-            </li>
-        </ul>
-        <nav>
-            <a href="https://www.lanacion.com.ar/dolar-hoy/"target="_blank"> Dólar oficial </a> <b> $1385 </b>
-            <a href="https://www.lanacion.com.ar/tema/dolar-blue-tid67294/"target="_blank"> Dólar blue </a> <b> $ 1410 </b>
-            <a href="https://www.lanacion.com.ar/tema/dolar-tarjeta-tid50462/"target="_blank"> Dólar tarjeta </a> <b> $ 1800,50 </b>
-            <a href="https://www.lanacion.com.ar/tema/dolar-mep/"target="_blank"> Dólar MEP </a> <b> $ 1398,53 </b>
+        <div class="top-bar">
+            <div class="top-left">
+                Capital Federal ☀️ 16.7°
+            </div>
+
+            <div class="top-center">
+                <span>CLUB LN</span>
+                <span>EN VIVO</span>
+                <span>FOODIT</span>
+                <span>CANCHALLENA</span>
+            </div>
+
+            <div class="top-right">
+                <a href="#Contacto" class="contacto-link">CONTACTO</a>
+                <button class="login">INICIAR SESIÓN</button>
+                <button class="suscribite">SUSCRIBITE POR $900</button>
+            </div>
+        </div>
+
+        <div class="header-top">
+            <h1>
+                <img src="https://gda.com/wp-content/themes/gda/images/la-nacion.png">
+            </h1>
+        </div>
+
+        <nav class="dolar-bar">
+            <a href="https://www.lanacion.com.ar/dolar-hoy/" target="_blank">
+                Dólar oficial <b>$1405,00</b>
+            </a>
+            <a href="https://www.lanacion.com.ar/tema/dolar-blue-tid67294/" target="_blank">
+                Dólar blue <b>$1415,00</b>
+            </a>
+            <a href="https://www.lanacion.com.ar/tema/dolar-tarjeta-tid50462/" target="_blank">
+                Dólar tarjeta <b>$1826,50</b>
+            </a>
+            <a href="https://www.lanacion.com.ar/tema/dolar-mep/" target="_blank">
+                Dólar MEP <b>$1431,57</b>
+            </a>
         </nav>
+
+        <div class="news-bar">
+            <span class="vivo">● VIVO</span>
+            <span>Medidas de Milei <span class="tiempo">Hace 13 min</span> </span>
+            <span>Dólar hoy <span class="tiempo">Hace 2 min</span> </span>
+            <span>Guerra en Medio Oriente <span class="tiempo">Hace 30 min</span> </span>
+        </div>
     </header>
 
     <main>
 
-        <h1>Análisis.Un golpe bajo del objetivo más deseado</h1>
-        <p>El 3,4% de la inflación en marzo debilita la credibilidad del Presidente, que comienza a erosionarse en la materia para la cual él se siente más dotado; la afiebrada idea de utilizar a Adorni como pararrayos</p>
+        <h1>Un golpe bajo del objetivo más deseado</h1>
+        <p>El 3,4% de la inflación en marzo debilita la credibilidad del Presidente, que comienza a erosionarse en la
+            materia para la cual él se siente más dotado; la afiebrada idea de utilizar a Adorni como pararrayos</p>
         <article>
             <h3>ACTUALIDAD</h3>
-            <h2>"Tenemos el mismo origen". La saga de los Massaccesi: se reconocieron por el apellido y se declararon familia</h2>
-            <img src="https://resizer.glanacion.com/resizer/v2/el-primer-encuentro-se-realizo-el-10-de-diciembre-B3HAFZD6SJEBND6O6JXQ6WUFZA.jpeg?auth=1e8393a873ad146fa9e1615596906e74c341a59521c96b9ea96e64a5b5174201&width=488&height=325&quality=70&smart=true">
-            <p>“Los Massa” comparten costumbres, recuerdos heredados y la convicción de que el apellido también puede ser una forma de pertenencia</p>
-            <p>Por <strong>Constanza Bengochea</strong></p>
+            <h2>"Tenemos el mismo origen". La saga de los Massaccesi: se reconocieron por el apellido y se declararon
+                familia</h2>
+            <img
+                src="https://resizer.glanacion.com/resizer/v2/el-primer-encuentro-se-realizo-el-10-de-diciembre-B3HAFZD6SJEBND6O6JXQ6WUFZA.jpeg?auth=1e8393a873ad146fa9e1615596906e74c341a59521c96b9ea96e64a5b5174201&width=488&height=325&quality=70&smart=true">
+            <p>“Los Massa” comparten costumbres, recuerdos heredados y la convicción de que el apellido también puede
+                ser una forma de pertenencia</p>
+            <p class="autor">Por <strong>Constanza Bengochea</strong></p>
         </article>
 
         <article>
             <h3>DEPORTES</h3>
-            <h2>Busca su primer ATP 500. Francisco Cerúndolo ganó en forma contundente y voló a los cuartos de final del torneo de Múnich</h2>
-            <p>El argentino se impuso por 6-3 y 6-0 ante el neerlandés Botic van de Zandschulp y ahora se medirá con el ganador del encuentro entre Zverev y Diallo</p>
+            <h2>Busca su primer ATP 500. Francisco Cerúndolo ganó en forma contundente y voló a los cuartos de final del
+                torneo de Múnich</h2>
+            <p>El argentino se impuso por 6-3 y 6-0 ante el neerlandés Botic van de Zandschulp y ahora se medirá con el
+                ganador del encuentro entre Zverev y Diallo</p>
         </article>
     </main>
 
     <h1 id="Contacto">Contacto</h1>
 
     <!-- Fomulario -->
-     <form action="/form" method="get">
+    <form action="/form" method="get">
         <!-- el for dentro del label referencia al id del input -->
         <label for="idnombre">Nombre</label>
-        <input type="text" name="nombre"id="idnombre" required><br><br>
+        <input type="text" name="nombre" id="idnombre" required><br><br>
 
         <label for="idapellido">Apellido</label>
-        <input type="text" name="apellido"id="idapellido" required><br><br>
-        
+        <input type="text" name="apellido" id="idapellido" required><br><br>
+
         <label for="idemail">Email</label>
         <input type="email" name="email" id="idemail" required><br><br>
 
@@ -71,20 +110,25 @@
         </select><br><br>
 
         <fieldset>
-            <legend>Genero</legend>
-            <label><input type="radio" name="Genero" value="Femenino">Femenino</label>
-            <label><input type="radio" name="Genero" value="Masculino">Masculino</label>
+            <legend>Género</legend>
+            <label><input type="radio" name="Género" value="Femenino" checked>Femenino</label>
+            <label><input type="radio" name="Género" value="Masculino">Masculino</label>
         </fieldset><br>
 
         <label for="message">Mensaje:</label><br>
         <textarea id="message" name="mensaje"></textarea><br><br>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-     </form>
+        <div class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
 
     <footer>
-        <p>© Copyright 2026 SA LA NACION | Todos los derechos reservados. Dirección Nacional del Derecho de Autor DNDA - EXPEDIENTE DNDA (renovación) RL-2023-95334553-APN-DNDA#MJ.Queda prohibida la reproducción total o parcial del presente diario.</p>
+        <p>© Copyright 2026 SA LA NACION | Todos los derechos reservados. Dirección Nacional del Derecho de Autor DNDA -
+            EXPEDIENTE DNDA (renovación) RL-2023-95334553-APN-DNDA#MJ.Queda prohibida la reproducción total o parcial
+            del presente diario.</p>
     </footer>
 </body>
+
 </html>
