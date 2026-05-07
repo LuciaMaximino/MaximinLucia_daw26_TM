@@ -59,9 +59,9 @@ header {
 
 .header-top {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .header-top img {
@@ -97,6 +97,7 @@ ul li a:hover {
     padding: 10px 20px;
     border-top: 1px solid #ddd;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .dolar-bar a {
@@ -124,6 +125,7 @@ ul li a:hover {
     padding: 10px 20px;
     border-top: 1px solid #ddd;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 
@@ -208,9 +210,10 @@ form {
 }
 
 input, textarea, select {
-    width: 97%;
+    width: 100%;
     padding: 8px;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 input[type="radio"]{
@@ -229,4 +232,112 @@ footer {
     padding: 20px;
     font-size: 12px;
     text-align: center;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .top-center,
+    .top-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dolar-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .news-bar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    article h2 {
+        font-size: 18px;
+    }
+
+    form {
+        margin: 20px;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* celu */
+@media (max-width: 430px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .top-bar {
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .login,
+    .suscribite,
+    .contacto-link{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header-top img {
+        width: 180px;
+        height: auto;
+    }
+
+    .dolar-bar,
+    .news-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones input {
+        width: 100%;
+    }
+
+    #Contacto {
+        font-size: 24px;
+    }
 }
