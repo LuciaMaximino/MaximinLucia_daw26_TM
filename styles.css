@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -80,10 +84,10 @@ ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 8px 15px;           
-    background-color: rgb(61, 137, 172);   
-    border-radius: 5px;          
-    transition: 0.3s;            
+    padding: 8px 15px;
+    background-color: rgb(61, 137, 172);
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 ul li a:hover {
@@ -140,8 +144,8 @@ ul li a:hover {
 .vivo {
     background-color: red;
     color: white;
-    padding: 4px 10px;     
-    border-radius: 20px;    
+    padding: 4px 10px;
+    border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -184,20 +188,25 @@ article img {
     margin: 10px 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .autor {
     margin-top: 10px;
     font-size: 12px;
     color: gray;
 }
 
-#Contacto{
+#Contacto {
     font-size: 30px;
     font-weight: bold;
     color: black;
-    margin: 20px, 0;
+    margin: 20px 0;
     padding: 20px;
-    text-align: center;          
-    background-color: rgb(189, 189, 189);                  
+    text-align: center;
+    background-color: rgb(189, 189, 189);
 }
 
 form {
@@ -209,14 +218,16 @@ form {
     flex-direction: column;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     width: auto;
 }
 
@@ -235,7 +246,7 @@ footer {
 }
 
 /* tablet */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 431px) {
 
     .top-bar {
         flex-direction: column;
@@ -289,27 +300,56 @@ footer {
 /* celu */
 @media (max-width: 430px) {
 
-    body{
+     body {
         overflow-x: hidden;
+        margin: 0;
     }
 
     .top-bar {
         padding: 10px;
+        display: flex;
         flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .top-center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
     .top-right {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 8px;
         width: 100%;
     }
 
+    .contacto-link,
     .login,
-    .suscribite,
-    .contacto-link{
-        width: 100%;
+    .suscribite {
+        width: 90%;
+        max-width: 320px;
+        height: 40px;
         box-sizing: border-box;
-        text-align: center;
+    }
+
+    .contacto-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        border: 1px solid #ccc;
+        padding: 0;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: center;
     }
 
     .header-top img {
@@ -317,10 +357,20 @@ footer {
         height: auto;
     }
 
-    .dolar-bar,
+    .dolar-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+    }
+
     .news-bar {
+        display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
 
     main {
@@ -330,6 +380,7 @@ footer {
     }
 
     .botones {
+        display: flex;
         flex-direction: column;
     }
 
